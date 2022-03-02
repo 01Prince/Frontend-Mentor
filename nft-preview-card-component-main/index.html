@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS link -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+</head>
+<body>
+  <main>
+
+    <div class="nftcard">
+      <div class="img">
+        <img id="nft" src="images/image-equilibrium.jpg" alt="Equilibrium NFT">
+        <div class="view"><img src="images/icon-view.svg" alt="Icon view"></div>
+      </div>
+      <div class="txt">
+        <h1>Equilibrium #3429</h1>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+      </div>
+
+      <!-- Price and time left information-->
+      <div class="tpinfo"> <!--Price-->
+        <div class="eth">
+          <img class="infosicon" src="images/icon-ethereum.svg" alt="Ethereum icon">
+          <span id="price">0.041 ETH</span>
+        </div>
+        <div class="timeleft"> <!-- Time left -->
+          <img class="infosicon" src="images/icon-clock.svg" alt="Clock icon">
+          <span id="time">3 days left</span>
+        </div>
+      </div>
+
+      <!-- Horizontal line -->
+      <hr>
+
+      <!-- Creator -->
+      <div class="creator">
+        <img id="jw" src="images/image-avatar.png" alt="Jules Wyvern">
+        <span id="jules">Creation of <a id="creatorlink" href="">Jules Wyvern</a></span>
+      </div>
+
+    </div>
+
+
+    <!-- Attribution -->
+    <div class="attribution">
+      <span id="att">
+        Challenge by <a class="attlink" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a class="attlink" href="#">Anderson</a>.
+      </span>
+    </div>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: hsl(217, 54%, 11%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card */
+.nftcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-height: 510px;
+    max-width: 300px;
+
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 0px 0px 24px hsla(215, 55%, 8%, 0.4);
+
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: auto;
+}
+
+#nft {
+    position: absolute;
+    border-radius: 8px;
+    height: 268px;
+    size: 100%;
+}
+
+/* NFT overlay */
+.view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    height: 268px;
+    width: 268px;
+
+    opacity: 0%;
+
+    background-color: hsla(178, 100%, 50%, 45%);
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+}
+
+.view:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* Time left and price info*/
+.tpinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    padding: 1rem 0;
+}
+
+.eth {
+    display: flex;
+    align-items: center;
+
+    font-weight: 600;
+}
+
+.timeleft {
+    display: flex;
+    align-items: center;
+}
+
+.infosicon {
+    height: 100%;
+    padding: 0 5px 0 0;
+}
+
+
+
+/* Horizontal row */
+hr {
+    position: relative;
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+}
+
+/* Texts */
+h1 {
+    font-size: 19px;
+    font-weight: 600;
+    padding: 1rem 0;
+    width: 60%;
+
+    color: var(--white);
+
+    transition: 0.3s;
+}
+
+h1:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--softblue);
+}
+
+#price {
+    color: var(--cyan);
+}
+
+#time {
+    color: var(--softblue);
+}
+
+/* Creator */
+.creator {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0 0 0;
+}
+
+#jw {
+    height: 32px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#jules {
+    font-size: 16px;
+    color: var(--softblue);
+
+    padding: 0 0 0 1rem;
+}
+
+#creatorlink {
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.3s;
+}
+
+#creatorlink:hover {
+    color: var(--cyan);
+}
+
+/* Attribution */
+.attribution {
+    font-size: 11px;
+    padding: 1rem 0 0 0;
+}
+
+#att {
+    color: var(--softblue);
+}
+
+.attlink {
+    color: var(--white);
+    text-decoration: none;
+    
+    transition: 0.3s;
+}
+
+.attlink:hover {
+    color: var(--cyan);
+}
